@@ -25,7 +25,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
         rules:
         - priority: 0
           serve:
