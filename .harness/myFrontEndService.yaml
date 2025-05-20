@@ -1,0 +1,45 @@
+featureFlags:
+  flags:
+  - flag:
+      name: My_Test_Flag
+      identifier: My_Test_Flag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: Development
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: Production
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: Test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: UAT
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: Staging
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  projectIdentifier: Irams_Demo
+  orgIdentifier: default
